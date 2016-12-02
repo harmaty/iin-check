@@ -7,6 +7,7 @@ describe "IinValidator" do
     expect(subject.valid?('0000010007')).to be false
   end
 
+
   it "should not validate IIN with non digits" do
     expect(subject.valid?('000001000x7')).to be false
   end
